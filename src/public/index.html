@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and user-friendly calculator web application">
+    <meta name="theme-color" content="#4CAF50">
     <meta name="google-adsense-account" content="ca-pub-5407296980965714">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5407296980965714"
      crossorigin="anonymous"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5407296980965714"
-     crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="buttons">
-            <button class="button" onclick="appendToDisplay('7')">7</button>
-            <button class="button" onclick="appendToDisplay('8')">8</button>
-            <button class="button" onclick="appendToDisplay('9')">9</button>
-            <button class="button operator" onclick="appendToDisplay('+')">+</button>
-            <button class="button" onclick="appendToDisplay('4')">4</button>
-            <button class="button" onclick="appendToDisplay('5')">5</button>
-            <button class="button" onclick="appendToDisplay('6')">6</button>
-            <button class="button operator" onclick="appendToDisplay('-')">-</button>
-            <button class="button" onclick="appendToDisplay('1')">1</button>
-            <button class="button" onclick="appendToDisplay('2')">2</button>
-            <button class="button" onclick="appendToDisplay('3')">3</button>
-            <button class="button operator" onclick="appendToDisplay('*')">×</button>
-            <button class="button" onclick="appendToDisplay('0')">0</button>
-            <button class="button" onclick="appendToDisplay('.')">.</button>
-            <button class="button calculate" onclick="calculate()">=</button>
-            <button class="button operator" onclick="appendToDisplay('/')">÷</button>
-            <button class="button clear" onclick="clearDisplay()">C</button>
+    <main class="calculator" role="application" aria-label="Calculator">
+        <input type="text" id="display" readonly aria-live="polite" aria-label="Calculator display" placeholder="0">
+        <div class="buttons" role="group" aria-label="Calculator buttons">
+            <button type="button" class="button" onclick="appendToDisplay('7')" aria-label="7">7</button>
+            <button type="button" class="button" onclick="appendToDisplay('8')" aria-label="8">8</button>
+            <button type="button" class="button" onclick="appendToDisplay('9')" aria-label="9">9</button>
+            <button type="button" class="button operator" onclick="appendToDisplay('+')" aria-label="Add">+</button>
+            <button type="button" class="button" onclick="appendToDisplay('4')" aria-label="4">4</button>
+            <button type="button" class="button" onclick="appendToDisplay('5')" aria-label="5">5</button>
+            <button type="button" class="button" onclick="appendToDisplay('6')" aria-label="6">6</button>
+            <button type="button" class="button operator" onclick="appendToDisplay('-')" aria-label="Subtract">−</button>
+            <button type="button" class="button" onclick="appendToDisplay('1')" aria-label="1">1</button>
+            <button type="button" class="button" onclick="appendToDisplay('2')" aria-label="2">2</button>
+            <button type="button" class="button" onclick="appendToDisplay('3')" aria-label="3">3</button>
+            <button type="button" class="button operator" onclick="appendToDisplay('*')" aria-label="Multiply">×</button>
+            <button type="button" class="button" onclick="appendToDisplay('0')" aria-label="0">0</button>
+            <button type="button" class="button" onclick="appendToDisplay('.')" aria-label="Decimal point">.</button>
+            <button type="button" class="button calculate" onclick="calculate()" aria-label="Equals">=</button>
+            <button type="button" class="button operator" onclick="appendToDisplay('/')" aria-label="Divide">÷</button>
+            <button type="button" class="button clear" onclick="clearDisplay()" aria-label="Clear">C</button>
         </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
